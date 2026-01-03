@@ -1,7 +1,5 @@
 import { motion, type Variants, type Transition } from "motion/react";
 
-/* ---------------- Motion Config ---------------- */
-
 const LABEL_VARIANTS: Variants = {
   rest: { opacity: 0, x: 4 },
   hover: { opacity: 1, x: 0, visibility: "visible" },
@@ -28,8 +26,6 @@ const BUTTON_MOTION_CONFIG = {
   },
   transition: { type: "spring", stiffness: 250, damping: 25 },
 } as const;
-
-/* ---------------- Colors ---------------- */
 
 export type ButtonColor =
   | "green"
